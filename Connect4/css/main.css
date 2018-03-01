@@ -1,0 +1,58 @@
+body {
+  font-family: 'Palatino', 'Garamond', serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.info {
+  text-align: center;
+}
+
+.wrapper {
+  margin: 50px auto 0;
+  width: 450px;
+}
+
+.board {
+  background: #2fa5f5;
+}
+.board button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  background: #bbb;
+}
+.player {
+  text-transform: capitalize;
+}
+
+.info .red {
+  color: red;
+}
+
+.info .black {
+  color: black;
+}
+
+.play-again {
+  display: none;
+}
+.play-again {
+  display: inline-block;
+  margin-bottom: 2em;
+  height: 40px;
+  line-height: 40px;
+  width: 50%;
+  background: blue;
+  color: white;
+  text-decoration: none;
+  font-family: helvetica;
+  opacity: 0.9;
+}
+.play-again:hover {
+  opacity: 1;
+}
+

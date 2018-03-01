@@ -1,0 +1,184 @@
+<html>
+	<head>
+		<title>Binary Puzzle</title>
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+	<body id="bodyy">
+		<script type="text/javascript" src="functionality.js"></script>
+
+		<span id="timer"></span>
+
+		<table>
+			<tr>
+				<td><input type="button"  align="center" id="00.1" onclick="add(this.id);" onblur="check(this.id);"/></td>
+				<td><input type="button"  align="center" id="01.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="02.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="04.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button" align="center" id="05.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="08.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "0" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="010.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id=".0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+			</tr>
+			<tr>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;" /></td>
+				<td><input type="button"  align="center" id="11.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "0" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="13.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="14.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="15.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="16.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="17.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled  style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="19.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="110.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="111.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+			</tr>
+			<tr>
+				<td><input type="button"  align="center" id="20.0"onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="21.1" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="22.1" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="23.0" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="24.0" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="25.1" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="26.1" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="27.0" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="28.0" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="29.1" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  value = "0" align="center" disabled style="background-color: #653329;"/></td>
+			</tr>
+			<tr>
+				<td><input type="button"  align="center" id="30.0" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="31.0" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  value = "1" align="center" disabled  style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="34.0" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="35.0" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="36.1" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="38.0" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="310.1" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="311.0" id="" onclick="add(this.id);" onblur="check(this.id);" /></td>
+			</tr>
+			<tr>
+				<td><input type="button"  align="center" id="40.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "0" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="42.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="43.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="44.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="45.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="46.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="47.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="48.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="49.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="410.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+			</tr>
+			<tr>
+				<td><input type="button"  align="center" id="50.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="51.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="53.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="54.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="55.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="56.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="57.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="59.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="510.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+			</tr>
+			<tr>
+				<td><input type="button"  value = "0" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  value = "0" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="62.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="63.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="64.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="65.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="66.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "0" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="68.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="69.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="610.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="611.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+			</tr>
+			<tr>
+				<td><input type="button"  align="center" id="70.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="71.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="72.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="74.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="75.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="76.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="77.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="78.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="79.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+			</tr>
+			<tr>
+				<td><input type="button"  align="center" id="80.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="81.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="83.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="84.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="85.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="86.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="87.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="88.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="89.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="810.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="811.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+			</tr>
+			<tr>
+				<td><input type="button"  align="center" id="90.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "0" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="92.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="93.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="94.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="95.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="96.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="98.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="99.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="910.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="911.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+			</tr>
+			<tr>
+				<td><input type="button"  align="center" id="100.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="101.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="102.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  align="center" id="105.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="106.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="107.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="108.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="109.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+				<td><input type="button"  value = "1" align="center" disabled style="background-color: #653329;"/></td>
+			</tr>
+			<tr>
+				<td><input type="button"  align="center" id="110.1" onclick="add(this.id);" onblur="check(this.id);"  /></td>
+				<td><input type="button"  align="center" id="111L.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="112.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="113.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="114.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="115.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="116.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="117.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="118.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="119.1" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="1110.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+				<td><input type="button"  align="center" id="1111.0" onclick="add(this.id);" onblur="check(this.id);" /></td>
+			</tr>
+		</table>
+
+	</body>
+</html>

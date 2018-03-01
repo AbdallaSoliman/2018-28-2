@@ -1,0 +1,122 @@
+<html>
+<head>
+<style type="text/css">
+div#memory_id{
+background-image: url("background.jpg");
+padding:24px;
+background-repeat: no-repeat;
+background-size: 1100px 610px;
+background-attachment: fixed;
+background-position: center; 
+}
+
+#boxbuttons {
+	text-align: center;
+	margin: 20px;
+	display: block;
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: oblique;
+    color: white;
+
+}
+#boxbuttons .button {
+	text-transform: uppercase;
+	background: #ce20c6;
+	padding: 5px 10px;
+	margin: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	border-radius: 40%;
+}
+#boxbuttons .button:hover {
+	background: #999;
+}
+.plybutton {
+	text-transform: uppercase;
+	font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: oblique;
+    color: white;
+	background: #ce20c6;
+	padding: 5px 10px;
+	margin: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	border-radius: 40%;
+}
+h1{
+    text-align: center;
+	text-shadow: 3px 2px #ce20c6;
+	margin: 20px;
+	font-size: 60px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: oblique;
+    color: #bab3b3;
+}
+.game-over {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(20, 20, 20, .9);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+</style>
+</head>
+<body>
+<section class='game-over'>
+      <h1></h1>
+      <h1 class='final-score'></h1>
+      <h1 class='time'></h1>
+      <span class="plybutton">
+      <a onclick="ResetGame();">Play Again</a>
+    </span> 
+    </section>
+<div id="memory_id" align="center">
+<h1 class="header">MEMORY GAME </h1>
+<span id="boxbuttons">
+<span class="button">
+      Score:
+      <span id="counter">0</span>
+    </span>
+	<span class="button">
+	  Time:
+	<span id="timer">1:02</span>
+    </span>
+    <span class="button">
+      <a onclick="ResetGame();">Reset</a>
+    </span> 	
+	</span>
+<table >
+<tr>
+<td><img src="Disney_princess.png" onclick="choose(0)" width="210" height="150"></td>
+<td><img src="Disney_princess.png" onclick="choose(1)" width="210" height="150"></td>
+<td><img src="Disney_princess.png" onclick="choose(2)" width="210" height="150"></td>
+<td><img src="Disney_princess.png" onclick="choose(3)" width="210" height="150"></td>
+</tr>
+
+<tr>
+<td><img src="Disney_princess.png" onclick="choose(4)" width="210" height="150"></td>
+<td><img src="Disney_princess.png" onclick="choose(5)" width="210" height="150"></td>
+<td><img src="Disney_princess.png" onclick="choose(6)" width="210" height="150"></td>
+<td><img src="Disney_princess.png" onclick="choose(7)" width="210" height="150"></td>
+</tr>
+
+<tr>
+<td><img src="Disney_princess.png" onclick="choose(8)" width="210" height="150"></td>
+<td><img src="Disney_princess.png" onclick="choose(9)" width="210" height="150"></td>
+<td><img src="Disney_princess.png" onclick="choose(10)" width="210" height="150"></td>
+<td><img src="Disney_princess.png" onclick="choose(11)" width="210" height="150"></td>
+</tr>
+</table>
+</div>
+<SCRIPT SRC= "memory_game.js">
+</SCRIPT>
+</body>
+</html>
